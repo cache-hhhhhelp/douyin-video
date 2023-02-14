@@ -1,0 +1,14 @@
+Name: video.rpc
+ListenOn: 0.0.0.0:8080
+Cache:
+  - Host: localhost:6379
+    Type: node
+    Pass: ""
+Mysql:
+  Datasource: test
+COS:
+  BucketName: example-bucket
+  AppId: example-app
+  Region: example-city
+  SecretId: example-secret-id
+  SecretKey: example-secret-key
