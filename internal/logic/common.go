@@ -7,6 +7,8 @@ import (
 	"strconv"
 )
 
+var _ Util = (*UtilImpl)(nil)
+
 type (
 	Util interface {
 		FillVideos(rawVideos []model.Video) []*pb.Video
@@ -26,14 +28,11 @@ func (u *UtilImpl) FillVideos(rawVideos []model.Video) []*pb.Video {
 	for i := 0; i < len(videos); i++ {
 		videoKey := strconv.FormatInt(rawVideos[i].Id, 10)
 		videos[i] = &pb.Video{
-			Id:            rawVideos[i].Id,
-			Author:        nil,
-			PlayUrl:       u.getUrl(videoKey),
-			CoverUrl:      u.getUrl("cover_" + videoKey),
-			FavoriteCount: 0,
-			CommentCount:  0,
-			IsFavorite:    false,
-			Title:         rawVideos[i].Title,
+			Id:       rawVideos[i].Id,
+			AuthorId: rawVideos[i].AuthorId,
+			PlayUrl:  u.getUrl(videoKey),
+			CoverUrl: u.getUrl("cover_" + videoKey),
+			Title:    rawVideos[i].Title,
 		}
 	}
 	return videos

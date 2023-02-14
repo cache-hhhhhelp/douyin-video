@@ -43,7 +43,6 @@ func (l *FeedLogic) Feed(in *pb.DouyinFeedRequest) (*pb.DouyinFeedResponse, erro
 			nextTime = video.CreatedAt
 		}
 	}
-	// todo: fill other infos
 
 	return &pb.DouyinFeedResponse{
 		VideoList: l.svcCtx.Util.FillVideos(rawVideos),
