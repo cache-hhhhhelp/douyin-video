@@ -5,8 +5,8 @@ import (
 	"math"
 	"time"
 
-	"douyin-video/internal/svc"
-	"douyin-video/types/pb"
+	"github.com/cache-hhhhhelp/douyin-video/internal/svc"
+	"github.com/cache-hhhhhelp/douyin-video/types/pb"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

@@ -1,9 +1,9 @@
 package svc
 
 import (
-	"douyin-video/internal/config"
-	"douyin-video/internal/logic"
-	"douyin-video/internal/model"
+	"github.com/cache-hhhhhelp/douyin-video/internal/config"
+	"github.com/cache-hhhhhelp/douyin-video/internal/logic"
+	"github.com/cache-hhhhhelp/douyin-video/internal/model"
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
 	"net/http"

@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"douyin-video/internal/logic"
-	"douyin-video/internal/svc"
-	"douyin-video/types/pb"
+	"github.com/cache-hhhhhelp/douyin-video/internal/logic"
+	"github.com/cache-hhhhhelp/douyin-video/internal/svc"
+	"github.com/cache-hhhhhelp/douyin-video/types/pb"
 )
 
 type VideoRpcServer struct {

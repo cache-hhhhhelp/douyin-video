@@ -3,9 +3,9 @@ package logic
 import (
 	"bytes"
 	"context"
-	"douyin-video/internal/model"
-	"douyin-video/internal/svc"
-	"douyin-video/types/pb"
+	"github.com/cache-hhhhhelp/douyin-video/internal/model"
+	"github.com/cache-hhhhhelp/douyin-video/internal/svc"
+	"github.com/cache-hhhhhelp/douyin-video/types/pb"
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"github.com/zeromicro/go-zero/core/logx"
 	"strconv"

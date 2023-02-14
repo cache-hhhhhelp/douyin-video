@@ -1,8 +1,8 @@
 package logic
 
 import (
-	"douyin-video/internal/model"
-	"douyin-video/types/pb"
+	"github.com/cache-hhhhhelp/douyin-video/internal/model"
+	"github.com/cache-hhhhhelp/douyin-video/types/pb"
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"strconv"
 )

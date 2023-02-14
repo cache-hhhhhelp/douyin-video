@@ -6,7 +6,7 @@ package videorpc
 import (
 	"context"
 
-	"douyin-video/types/pb"
+	"github.com/cache-hhhhhelp/douyin-video/types/pb"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
