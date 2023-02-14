@@ -9,6 +9,7 @@ import (
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"github.com/zeromicro/go-zero/core/logx"
 	"strconv"
+	"time"
 )
 
 type PublishActionLogic struct {
@@ -39,8 +40,9 @@ func (l *PublishActionLogic) uploadVideo(data []byte, key string) error {
 func (l *PublishActionLogic) PublishAction(in *pb.DouyinPublishActionRequest) (*pb.DouyinPublishActionResponse, error) {
 
 	video := model.Video{
-		AuthorId: in.UserId,
-		Title:    in.Title,
+		AuthorId:  in.UserId,
+		Title:     in.Title,
+		CreatedAt: time.Now().Unix(),
 	}
 	// insert metadata into database
 	sqlResult, err := l.svcCtx.VideoModel.Insert(l.ctx, &video)
