@@ -1,4 +1,4 @@
-module douyin-video
+module github.com/cache-hhhhhelp/douyin-video
 
 go 1.19
 
